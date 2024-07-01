@@ -35,9 +35,11 @@
         </div>
     </div>
 
-    <div class="mt-4">
-
-    </div>
+    @foreach ($tasks as $task)
+        <div class="mt-4">
+            <h2 class="text-white"> {{ $task->task }} </h2>
+        </div>
+    @endforeach
 
 </body>
 
