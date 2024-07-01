@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>ToDo</title>
+    <title> {{ config('app.name') }} </title>
 </head>
 
 <body class="m-0 p-0 box-border font-sans-serif bg-gray-900">
@@ -20,17 +20,23 @@
         </div>
     </nav>
 
+    <div class="flex items-center justify-center mt-8">
+        <h2 class="text-gray-100 text-3xl">To Do List</h2>
+    </div>
 
-    <div class="mt-16">
-        <div class="border-2 border-gray-700 border-opacity-20 py-6 rounded-full w-3/5 mx-auto">
-            <div class="flex items-center justify-center">
-                <h2 class="text-gray-100 text-3xl">To Do List</h2>
-            </div>
+    <hr class="mt-2 w-2/5 flex items-center justify-center mx-auto border-2 rounded-full border-green-700">
+
+    <div class="mt-8">
+        <div class="w-3/4 mx-auto">
             <div class="flex items-center justify-center mt-10">
-                <textarea name="textarea" id="textarea" cols="60" rows="1"
-                    class="bg-gray-800 resize-none w-7/12 rounded-2xl px-3 py-2 text-gray-100"></textarea>
+                <textarea name="textarea" id="textarea" cols="60" rows="1" placeholder="Add Task..."
+                    class="bg-gray-800 resize-none w-3/5 rounded-2xl px-3 py-2 text-gray-100"></textarea>
             </div>
         </div>
+    </div>
+
+    <div class="mt-4">
+
     </div>
 
 </body>
